@@ -1,0 +1,7 @@
+{
+  "name": "One-to-One: Liderança em Campo",
+  "description": "Plataforma de gestão de pessoas para engenheiros e mestres, focada em alinhamento de propósito, ambição e performance no canteiro de obras.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
