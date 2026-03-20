@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface SidebarProps {
@@ -11,6 +10,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, userPerfil }
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'fa-house-chimney' },
     { id: 'history', label: 'Histórico', icon: 'fa-timeline' },
+    { id: 'portals', label: 'Portais', icon: 'fa-layer-group' },
     { id: 'team', label: 'Minha Equipe', icon: 'fa-users-gear' },
     { id: 'settings', label: 'Configurações', icon: 'fa-sliders' },
   ];
@@ -51,11 +51,11 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, userPerfil }
         <div className="bg-slate-800/50 p-5 rounded-3xl border border-slate-700">
           <p className="text-[10px] font-black text-amber-500 uppercase mb-2 tracking-widest">Atalho Rápido</p>
           <button 
-            onClick={() => setActiveTab('dashboard')}
+            onClick={() => setActiveTab('portals')}
             className="w-full bg-white/5 hover:bg-white/10 p-3 rounded-xl text-[10px] font-bold text-slate-300 transition-colors flex items-center gap-2"
           >
             <i className="fa-solid fa-circle-plus text-amber-500"></i>
-            INICIAR CONVERSA
+            NOVO PORTAL
           </button>
         </div>
       </div>

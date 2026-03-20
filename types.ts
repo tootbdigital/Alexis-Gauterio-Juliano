@@ -1,4 +1,3 @@
-
 export type AnswerType = 'text' | 'scale' | 'choice';
 
 export interface Question {
@@ -19,6 +18,7 @@ export interface OneOnOne {
   data: string;
   liderId: string;
   lideradoId: string;
+  portalId: string;
   respostas: MeetingAnswers;
   insightsIA?: string;
   sentimento: 'Positivo' | 'Neutro' | 'Preocupante';
@@ -29,8 +29,19 @@ export interface Colaborador {
   nome: string;
   cargo: string;
   obra: string;
+  portalId: string;
   foto?: string;
   dataUltimoFeedback?: string;
+}
+
+export interface Portal {
+  id: string;
+  nome: string;
+  codigo: string;
+  descricao: string;
+  responsavel: string;
+  status: 'Planejamento' | 'Ativo' | 'Em pausa' | 'Concluído';
+  createdAt: string;
 }
 
 export interface Obra {
